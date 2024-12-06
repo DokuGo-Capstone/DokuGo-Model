@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import joblib
 import numpy as np
 from tensorflow.keras.models import load_model
 
@@ -7,8 +6,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 
 # Muat model dan scaler
-model = load_model('/home/rapuri/Python/capstone/expense_prediction_model_fixed.h5')  # Ganti dengan path ke model Anda
-# scaler = joblib.load('/home/rapuri/Python/capstone/scaler.pkl')  # Muat scaler yang telah di-fit sebelumnya
+model = load_model('expense_prediction_model_fixed.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
