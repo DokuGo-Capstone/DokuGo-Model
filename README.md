@@ -7,7 +7,6 @@
 ## **Features**
 
 - **Financial Prediction**: Implements a Neural Network to predict personal financial patterns, including expenses and savings, based on user input.
-- **Feedback Loop**: Utilizes **Retrieval-Augmented Generation (RAG)** to enhance prediction accuracy and context-aware financial insights through retraining with updated user data.
 
 ---
 
